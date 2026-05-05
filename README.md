@@ -71,10 +71,10 @@ This separation helps analyze both high level trends and detailed bottlenecks.
 ![Dashboard](Images/dashboard_screenshot.png)
 
 ## Data Model
-![ERD](Images/erd.png)
+![ERD](Images/ERD.png)
 
 ## Architecture
-![Architecture](Images/architecture.png)
+![Architecture](Images/architecure_diagram.png)
 
 ## Use Case
 This solution helps hospital teams identify delays, improve patient flow, and optimize staffing and resource planning.
