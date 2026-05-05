@@ -18,6 +18,7 @@ The dataset includes:
 - Timestamps from arrival to discharge  
 
 ## Approach
+Data processing and transformations were performed using Databricks notebooks with PySpark and SQL.
 
 ### Data Preparation
 - Standardized arrival modes and categorical fields  
@@ -32,10 +33,16 @@ The dataset includes:
 - Dimension tables provide context for patient, provider, and department  
 
 ### Architecture
-- Bronze layer for raw data  
-- Silver layer for cleaned data  
-- Gold layer for fact and dimension tables  
-- Data mart used for reporting  
+This project follows a layered data architecture using Databricks:
+- Bronze Layer  
+  Raw ER data ingested from source systems (event logs, patient, provider data)
+- Silver Layer  
+  Data cleaned, validated, and transformed for consistency
+- Gold Layer  
+  Fact and dimension tables created for analytical use (star schema)
+- Data Mart  
+  Final curated datasets used for reporting and dashboards
+Databricks was used to manage data processing and transformations across these layers.
 
 ## Reporting Layer
 Two datasets were created:
@@ -55,19 +62,19 @@ This separation helps analyze both high level trends and detailed bottlenecks.
 - Higher patient volume leads to longer wait time and delays  
 
 ## Tools Used
-- SQL  
+- Databricks (PySpark, SQL)  
 - Tableau  
 - Python  
-- Excel  
+- Excel   
 
 ## Dashboard
-![Dashboard](images/dashboard_screenshot.png)
+![Dashboard](Images/dashboard_screenshot.png)
 
 ## Data Model
-![ERD](images/erd.png)
+![ERD](Images/erd.png)
 
 ## Architecture
-![Architecture](images/architecture.png)
+![Architecture](Images/architecture.png)
 
 ## Use Case
 This solution helps hospital teams identify delays, improve patient flow, and optimize staffing and resource planning.
