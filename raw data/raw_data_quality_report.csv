@@ -1,0 +1,11 @@
+metric_nm,metric_value
+patient_rows,16500
+provider_rows,58
+raw_visit_rows,32112
+raw_unique_visits,32000
+raw_followup_rows,9336
+duplicate_visit_rows,112
+missing_provider_rows,186
+missing_triage_rows,113
+lwbs_rows,227
+admit_rows,6216
